@@ -16,7 +16,7 @@ function Detail() {
     try {
       setLoading(true);
       const response = await getUsersById(Number(id));
-      setUserDetails(response.users);
+      setUserDetails(response);
     } catch (error) {
       console.log(error);
     } finally {
